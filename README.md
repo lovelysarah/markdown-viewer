@@ -6,6 +6,7 @@ This project took shape in response to a specific requirement within a flight si
 
 **Live demo**: https://md.viewer.sarahrobichaud.dev
 
+As this was extracted from another fairly big project, I just "made it work" quickly to put up a demo. It was written years ago and needs clean up, the routing and styles system could benefit from an overhaul, I plan to slowly improve this over time to properly make it into its own thing.
 
 ## Deploy locally 
 
