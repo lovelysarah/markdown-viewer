@@ -4,6 +4,8 @@ This project took shape in response to a specific requirement within a flight si
 
 > The content found on other pages was generated using AI for the purpose of this demo.
 
+**Live demo**: https://md.viewer.sarahrobichaud.dev
+
 ## How it works
 
 Fetches markdown files from a defined routes array. It then parses the files to build HTML documents and hydrates a navigation component based on the content of the files.
