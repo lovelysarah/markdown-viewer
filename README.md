@@ -6,6 +6,28 @@ This project took shape in response to a specific requirement within a flight si
 
 **Live demo**: https://md.viewer.sarahrobichaud.dev
 
+
+## Deploy locally 
+
+Clone the repo
+```sh
+git clone https://github.com/sarahrobichaud/markdown-viewer.git
+```
+```sh
+cd markdown-viewer
+```
+Add and remove content by adding or removing files from the `handbook` directory and adjuste the `routes` in `src/index.ts`
+
+Install dependencies and build the project
+```sh
+npm i && npm run build
+```
+Start the server
+```
+node server.js
+```
+
+
 ## How it works
 
 Fetches markdown files from a defined routes array. It then parses the files to build HTML documents and hydrates a navigation component based on the content of the files.
