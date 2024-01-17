@@ -36,3 +36,9 @@ export const routes: Route[] = [
     },
 ];
 ```
+## In production
+
+![Production image 1](https://media.githubusercontent.com/media/sarahrobichaud/markdown-viewer/main/assets/images/handbook-2.png)
+
+
+![Production image 1](https://media.githubusercontent.com/media/sarahrobichaud/markdown-viewer/main/assets/images/handbook-1.png)
