@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/tw.css">
+</head>
+<body>
+  <section class="bg-white dark:bg-dark dark:text-white">
+    <button type="button" aria-label="Toggle TOC" id="side-nav-toggle"
+      class="flex items-center justify-end md:hidden px-4 fixed bottom-[80px] left-0 right-0 bg-light z-40 py-4">
+      <i aria-hidden="true" id="left-chev" class="mr-2 fa-solid fa-chevron-left"></i>
+      NGS Handbook
+    </button>
+    <div id="layout"
+      class="md:flex items-start justify-between min-h-[100vh] border-light border-x-0 xl:container mx-auto">
+      <div class="w-[calc(100%-2rem)] lg:w-4/5 md:pr-4 xl:pt-[var(--content-xl-t-padding)]">
+        <div id="content"
+          class="xl:shadow bg-white block px-8 xl:px-16 xl:py-8 xl:rounded-xl xl:border-2 border-light" />
+        <div class="lds-ellipsis loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="py-10 mt-4 mb-[calc(80px+56px)] flex gap-10 mx-8 justify-between text-black/70">
+        <div class="basis-2/3 flex flex-col gap-5">
+          <img class="w-[200px] opacity-70" src="/assets/images/logo.svg" alt="Generic logo" />
+          <span class="hidden lg:inline-block text-sm" Join Discord>Developed by Sarah Robichaud</span>
+        </div>
+      </div>
+    </div>
+    <div id="side-nav"
+      class="pb-4 px-4 rounded-l-lg fixed right-0 translate-x-[calc(100%-1rem)] bottom-[var(--absolute-b-offset)] md:shadow-none md:border-none md:max-h-fit overflow-y-scroll md:overflow-y-hidden md:translate-x-0 md:right-0 md:sticky transition top-[var(--absolute-t-offset)] md:min-w-[30%] md:bg-white md:top-[var(--sticky-md-t-offset)] lg:top-[var(--sticky-lg-t-offset)] xl:top-[var(--sticky-xl-t-offset)]">
+      <div class="lds-ellipsis loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/src/handbook/index.ts"></script>
+
+</body>
+</html>

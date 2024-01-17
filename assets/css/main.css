@@ -1,0 +1,41 @@
+@import "./base.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@-moz-document url-prefix() {
+    .stat-bar-container,
+    .moz-bdb-fallback {
+        background-color: rgba(2, 15, 25, 0.65);
+    }
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+@layer components {
+    /* General */
+
+    .tw-btn-primary {
+        @apply transition-colors font-bold bg-brand text-white py-2 px-8 rounded-md whitespace-nowrap;
+    }
+    .btn-success {
+        @apply transition-colors font-bold bg-pop text-white py-2 px-8 rounded-md;
+    }
+
+    .tw-dropdown > li > a {
+        @apply font-bold hover:text-brand-IC whitespace-nowrap no-underline;
+    }
+
+    .footer-link {
+        @apply underline decoration-white decoration-2 hover:decoration-brand-IC;
+    }
+}

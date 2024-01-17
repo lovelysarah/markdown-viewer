@@ -1,0 +1,57 @@
+{
+    "name": "md-viewer",
+    "version": "1.0.0",
+    "description": "Serves markdown files nicely rendered in HTML",
+    "targets": {
+        "handbook": {
+            "source": [
+                "handbook/handbook.html"
+            ],
+            "publicUrl": "/dist/handbook/",
+            "distDir": "dist/handbook/",
+            "engines": {
+                "browsers": "> 1%"
+            }
+        }
+    },
+    "scripts": {
+        "serve": "node server.js",
+        "watch-tailwind": "postcss ./assets/css/main.css -o ./assets/css/tw.css --watch",
+        "watch-ts": "parcel serve --dist-dir dist/handbook --no-hmr",
+        "build-tailwind": "postcss ./assets/css/main.css -o ./assets/css/tw.css",
+        "build-ts": "parcel build --target handbook",
+        "build-docs": "typedoc --watch --out docs --entryPointStrategy expand assets/js/resource-center",
+        "watch": "concurrently -n w-tailwind,w-ts -c cyan,blue \"npm run watch-tailwind\" \"npm run watch-ts\"",
+        "build": "npm run build-tailwind && npm run build-ts"
+    },
+    "author": "Sarah Robichaud",
+    "private": "true",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@types/dompurify": "^2.3.3",
+        "@types/jest": "^28.1.5",
+        "@types/node": "^18.0.0",
+        "autoprefixer": "^10.4.7",
+        "concurrently": "^7.2.2",
+        "cssnano": "^5.1.8",
+        "csv-parser": "^3.0.0",
+        "csv-writer": "^1.6.0",
+        "parcel": "^2.6.0",
+        "postcss": "^8.4.14",
+        "postcss-cli": "^9.1.0",
+        "postcss-import": "^14.1.0",
+        "sharp": "^0.30.7",
+        "tailwindcss": "^3.0.24",
+        "ts-jest": "^28.0.6",
+        "typedoc": "^0.22.17",
+        "typescript": "^4.7.4"
+    },
+    "dependencies": {
+        "@parcel/core": "^2.10.0",
+        "cropperjs": "^1.5.12",
+        "dompurify": "^2.3.8",
+        "express": "^4.18.2",
+        "nodemon": "^3.0.1",
+        "showdown": "^2.1.0"
+    }
+}
