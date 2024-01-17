@@ -39,7 +39,6 @@ app.get("/dist/handbook/:fileName", (req, res) => {
 app.get("/handbook/:fileName", (req, res) => {
     // List all the Markdown files in the directory
     const { fileName } = req.params;
-    console.log(fileName);
     const markdownDir = path.resolve(__dirname, "handbook");
     const filePath = path.join(markdownDir, fileName);
 
