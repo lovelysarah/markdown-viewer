@@ -4,7 +4,9 @@ This project took shape in response to a specific requirement within a flight si
 
 > The content found on other pages was generated using AI for the purpose of this demo.
 
-**Live demo**: https://md.viewer.sarahrobichaud.dev
+- **Live demo**: https://md.viewer.sarahrobichaud.dev
+- **In Production:** [flyngsvirtual.com](https://flyngsvirtual.com/handbook#)
+
 
 As this was extracted from another fairly big project, I just "made it work" quickly to put up a demo. It was written years ago and needs clean up, the routing and styles system could benefit from an overhaul, I plan to slowly improve this over time to properly make it into its own thing.
 
@@ -61,9 +63,5 @@ export const routes: Route[] = [
     },
 ];
 ```
-## In production
-
-![Production image 1](https://media.githubusercontent.com/media/sarahrobichaud/markdown-viewer/main/assets/images/handbook-2.png)
 
 
-![Production image 1](https://media.githubusercontent.com/media/sarahrobichaud/markdown-viewer/main/assets/images/handbook-1.png)
